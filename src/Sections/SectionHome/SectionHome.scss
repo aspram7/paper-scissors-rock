@@ -1,0 +1,43 @@
+.section-home-content {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  flex-grow: 1;
+
+  .section-home-item {
+    position: absolute;
+  }
+
+  .triangleImg {
+    position: absolute;
+    transform: translateX(-150px) translateY(50px);
+  }
+
+  .home_paper {
+    transform: translateX(0px);
+    border-color: #5671f5;
+    box-shadow: inset 0px 8px rgb(233, 233, 233), 0px 8px #0e34f1;
+
+    &:hover {
+      transform: translateX(0px) scale(1.2);
+    }
+  }
+  .home_scissors {
+    transform: translateX(250px);
+    border-color: #eca922;
+    box-shadow: inset 0px 8px rgb(233, 233, 233), 0px 8px #b27c10;
+
+    &:hover {
+      transform: translateX(250px) scale(1.2);
+    }
+  }
+  .home_rock {
+    transform: translateX(125px) translateY(230px);
+    border-color: #dd405d;
+    box-shadow: inset 0px 8px rgb(233, 233, 233), 0px 8px #b21f3a;
+
+    &:hover {
+      transform: translateX(125px) translateY(230px) scale(1.2);
+    }
+  }
+}

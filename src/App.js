@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.scss";
+import Header from "./containers/Header/Header";
+import Section from "./Sections/Section";
+import Footer from "./containers/Footer/Footer";
 
 function App() {
+  const [score, setScore] = useState(0);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header score={score} />
+      <Section onChangeScore={(n) => setScore(score + n)} />
+      <Footer />
     </div>
   );
 }

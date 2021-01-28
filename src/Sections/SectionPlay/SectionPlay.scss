@@ -1,0 +1,98 @@
+.section-play-content {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  .play_again {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    .section-play-button {
+      background-color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-size: 12px;
+      border: none;
+      color: rgb(85, 26, 139);
+      letter-spacing: 0;
+
+      &:hover {
+        color: red;
+      }
+    }
+  }
+  .game-process {
+    background-color: rgba(220, 220, 220, 0.03);
+    margin: 50px 40px 0 40px;
+    width: 200px;
+    height: 200px;
+    background-size: 50%;
+    border-radius: 50%;
+    border: 18px solid;
+    border-color: transparent;
+    font-size: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .pick {
+    margin: 30px 10px 0 10px;
+    .pick_title {
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .pick_item {
+      &.home_paper {
+        border-color: #5671f5;
+        box-shadow: inset 0px 8px rgb(233, 233, 233), 0px 8px #0e34f1;
+      }
+      &.home_scissors {
+        border-color: #eca922;
+        box-shadow: inset 0px 8px rgb(233, 233, 233), 0px 8px #b27c10;
+      }
+      &.home_rock {
+        border-color: #dd405d;
+        box-shadow: inset 0px 8px rgb(233, 233, 233), 0px 8px #b21f3a;
+      }
+
+      &.home_paper.winner {
+        box-shadow: inset 0px 8px rgba(63, 55, 55, 0.01), 0px 8px #0e34f1, 0px 0px 0px 50px rgba(220, 220, 220, 0.08),
+          0px 0px 0px 100px rgba(220, 220, 220, 0.05), 0px 0px 0px 150px rgba(220, 220, 220, 0.03);
+      }
+      &.home_scissors.winner {
+        box-shadow: inset 0px 8px rgba(63, 55, 55, 0.01), 0px 8px #b27c10, 0px 0px 0px 50px rgba(220, 220, 220, 0.08),
+          0px 0px 0px 100px rgba(220, 220, 220, 0.05), 0px 0px 0px 150px rgba(220, 220, 220, 0.03);
+      }
+      &.home_rock.winner {
+        box-shadow: inset 0px 8px rgba(63, 55, 55, 0.01), 0px 8px #b21f3a, 0px 0px 0px 50px rgba(220, 220, 220, 0.08),
+          0px 0px 0px 100px rgba(220, 220, 220, 0.05), 0px 0px 0px 150px rgba(220, 220, 220, 0.03);
+      }
+
+      background-color: white;
+      margin: 50px 40px 0 40px;
+      width: 200px;
+      height: 200px;
+      background-size: 50%;
+      border-radius: 50%;
+      border: 18px solid;
+      border-color: transparent;
+      font-size: 6rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}
